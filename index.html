@@ -175,7 +175,7 @@
         };
         const germanyMessage = document.getElementById('germanyMessage');
         const englishMessage = document.getElementById('englishMessage');
-        const userLang = 'de';//navigator.language || navigator.userLanguage
+        const userLang = navigator.language || navigator.userLanguage
         if (userLang.startsWith('de')) {
             // display Germany Message
             document.getElementById('messageTitle').innerHTML = 'Ich will das Leben sehen, nicht Blind werden'
